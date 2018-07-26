@@ -5,7 +5,7 @@ public class Aluno extends Pessoa{
 	private String login;
 	private String senha;
 	private String curso;
-	private int id;
+	private int id = 10;
 	
 	
 	@Override
@@ -76,4 +76,15 @@ public class Aluno extends Pessoa{
 	}
 	
 	
+	public boolean cadastrarAluno(Aluno aluno){
+		this.nome = nome;
+		this.email = email;
+		this.cpf = cpf;
+		this.telefone = telefone;
+		this.login = login;
+		this.senha = senha;
+		this.id = id;
+		id++;
+		return true;
+	}
 }
